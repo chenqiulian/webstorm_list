@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    li{
+        list-style: none;
+        cursor: pointer;
+    }
+</style>
+<ul id="uu">
+    <li>www</li>
+    <li>eeee</li>
+    <li>rrrr</li>
+    <li>tttty</li>
+    <li>yyyy</li>
+</ul>
+<script src="common.js"></script>
+<script>
+    var list = my$("uu").getElementsByTagName("li");
+    for (var i=0;i<list.length;i++){
+        list[i].setAttribute("score",(i+1)*10);
+        list[i].onclick=function () {
+            alert(this.getAttribute("score"));
+        }
+    }
+</script>
+</body>
+</html>

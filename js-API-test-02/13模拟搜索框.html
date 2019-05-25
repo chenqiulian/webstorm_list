@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    input {
+        color: gray;
+    }
+</style>
+<input type="text" value="请输入搜索内容" id="txt">
+<script src="common.js"></script>
+<script>
+    my$("txt").onfocus=function () {
+        //console.log("youl")
+        if (this.value =="请输入搜索内容"){
+            this.value="";
+            this.style.color="black";
+        }
+    };
+    my$("txt").onblur=function () {
+        // console.log("zoul");
+        if (this.value.length==0){
+            this.value="请输入搜索内容";
+            this.style.color="gray";
+        }
+    }
+</script>
+</body>
+</html>

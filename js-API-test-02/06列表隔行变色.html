@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="common.js"></script>
+<input type="button" value="隔行变色" id="btn">
+<ul id="uu">
+    <li>红旗</li>
+    <li>奔腾</li>
+    <li>五菱宏光</li>
+    <li>奥迪</li>
+    <li>哈佛</li>
+    <li>兰博基尼</li>
+</ul>
+<!--<script>-->
+    <!--my$("btn").onclick = function () {-->
+        <!--var list = my$("uu").getElementsByTagName("li");-->
+        <!--for (var i = 0; i < list.length; i++) {-->
+            <!--if (i % 2 == 0) {-->
+                <!--list[i].style.backgroundColor = "red";-->
+            <!--} else {-->
+                <!--list[i].style.backgroundColor = "blue";-->
+            <!--}-->
+        <!--}-->
+    <!--}-->
+<!--</script>-->
+<script>
+    my$("btn").onclick = function () {
+        var list = my$("uu").getElementsByTagName("li");
+        for (var i = 0; i < list.length; i++) {
+            list[i].style.backgroundColor = i % 2 == 0 ? "red" : "yellow";
+        }
+    }
+</script>
+</body>
+</html>

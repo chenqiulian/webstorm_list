@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    ul{
+        list-style:none;
+        cursor: pointer;
+    }
+</style>
+<ul>
+    <li>222</li>
+    <li>333</li>
+    <li>444</li>
+    <li>555</li>
+    <li>666</li>
+    <li>777</li>
+</ul>
+<!--<script src="common.js"></script>-->
+<script>
+    function my$(id) {
+        return document.getElementById(id);
+    }
+var list = document.getElementsByTagName("li");
+for (var i=0;i<list.length;i++){
+    list[i].onmouseover=function () {
+        this.style.backgroundColor="yellow";
+    }
+    list[i].onmouseout=function () {
+        this.style.backgroundColor="";
+    }
+}
+</script>
+</body>
+</html>

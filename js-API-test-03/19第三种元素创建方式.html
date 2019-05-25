@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 150px;
+            border: 2px dashed pink;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="创建p" id="btn"/>
+<div id="dv"></div>
+<script src="common.js"></script>
+
+<script>
+    my$("btn").onclick=function () {
+        var pObj =document.createElement("p");
+        setInnnerText(pObj,"哈哈哈");
+        my$("dv").appendChild(pObj);
+    }
+</script>
+
+
+
+<!--<script>-->
+    <!--my$("btn").onclick=function () {-->
+        <!--var pObj = document.createElement("p");-->
+        <!--setInnnerText(pObj,"这是一个P");-->
+        <!--my$("dv").appendChild(pObj);-->
+    <!--}-->
+<!--</script>-->
+
+</body>
+</html>
